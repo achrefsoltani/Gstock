@@ -6,23 +6,47 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/backgroundimage"
-    tools:context=".Composants">
+    tools:context=".Recherche">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textView8"
         android:layout_width="match_parent"
         android:layout_height="85dp"
         android:gravity="center|center_vertical"
-        android:text="Liste des composants"
+        android:text="Recherche de Composant"
         android:textColor="#CBEDF1"
         android:textSize="28sp"
         android:textStyle="bold|italic" />
 
-    <ListView
-        android:id="@+id/lsvcomposants"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="450dp"
-        android:padding="10dp">
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:gravity="center|center_vertical"
+            android:text="Composant :"
+            android:textColor="#CBEDF1"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Nom de composant"
+            android:inputType="textPersonName"
+            android:textColor="#CBEDF1"
+            android:textColorHint="#CBEDF1" />
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="500dp">
 
     </ListView>
 
@@ -41,8 +65,8 @@
             android:layout_marginEnd="20dp"
             android:layout_marginRight="20dp"
             android:layout_weight="1"
-            android:text="Ajouter"
-            app:backgroundTint="#20BBCF" />
+            android:text="Deconnexion"
+            app:backgroundTint="#09808F" />
 
         <Button
             android:id="@+id/btnRetour"
@@ -57,17 +81,4 @@
             android:text="Retour"
             app:backgroundTint="#20BBCF" />
     </LinearLayout>
-
-    <Button
-        android:id="@+id/button10"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginLeft="60dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="60dp"
-        android:layout_marginRight="60dp"
-        android:layout_marginBottom="20dp"
-        android:text="Deconnexion"
-        app:backgroundTint="#09808F" />
 </LinearLayout>

@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Gstock">
-        <activity android:name=".Membres"></activity>
+        <activity android:name=".Recherche"></activity>
+        <activity android:name=".Emprunts" />
+        <activity android:name=".Membres" />
         <activity android:name=".Composants" />
         <activity android:name=".Familles" />
         <activity android:name=".Home" />

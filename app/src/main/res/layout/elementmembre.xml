@@ -16,7 +16,7 @@
         android:orientation="horizontal">
 
         <ImageView
-            android:id="@+id/imageView6"
+            android:id="@+id/imgf"
             android:layout_width="80dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
@@ -29,7 +29,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/txtnom"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:gravity="center|center_vertical"

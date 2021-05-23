@@ -6,22 +6,21 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/backgroundimage"
-    tools:context=".Composants">
+    tools:context=".Emprunts">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textView10"
         android:layout_width="match_parent"
         android:layout_height="85dp"
         android:gravity="center|center_vertical"
-        android:text="Liste des composants"
+        android:text="Liste des emprunts"
         android:textColor="#CBEDF1"
         android:textSize="28sp"
         android:textStyle="bold|italic" />
 
     <ListView
-        android:id="@+id/lsvcomposants"
         android:layout_width="match_parent"
-        android:layout_height="450dp"
+        android:layout_height="400dp"
         android:padding="10dp">
 
     </ListView>
@@ -59,7 +58,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/button10"
+        android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginStart="60dp"
@@ -70,4 +69,5 @@
         android:layout_marginBottom="20dp"
         android:text="Deconnexion"
         app:backgroundTint="#09808F" />
+
 </LinearLayout>

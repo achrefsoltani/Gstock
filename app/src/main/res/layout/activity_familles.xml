@@ -19,6 +19,7 @@
         android:textStyle="bold|italic" />
 
     <ListView
+        android:id="@+id/lsvFamilles"
         android:layout_width="match_parent"
         android:layout_height="450dp"
         android:padding="10dp">
@@ -31,7 +32,7 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/button8"
+            android:id="@+id/btnDec"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
@@ -44,7 +45,7 @@
             app:backgroundTint="#20BBCF" />
 
         <Button
-            android:id="@+id/button9"
+            android:id="@+id/btnRetour"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
