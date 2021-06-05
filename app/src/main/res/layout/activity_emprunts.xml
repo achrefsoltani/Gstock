@@ -58,7 +58,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnDeconn"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginStart="60dp"

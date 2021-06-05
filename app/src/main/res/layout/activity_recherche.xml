@@ -25,16 +25,17 @@
 
         <TextView
             android:id="@+id/textView9"
-            android:layout_width="120dp"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:gravity="center|center_vertical"
+            android:paddingLeft="5dp"
             android:text="Composant :"
             android:textColor="#CBEDF1"
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName"
-            android:layout_width="match_parent"
+            android:id="@+id/txtComposant"
+            android:layout_width="187dp"
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="Nom de composant"
@@ -42,9 +43,17 @@
             android:textColor="#CBEDF1"
             android:textColorHint="#CBEDF1" />
 
+        <Button
+            android:id="@+id/btnChercherC"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Chercher"
+            app:backgroundTint="#20BBCF" />
+
     </LinearLayout>
 
     <ListView
+        android:id="@+id/lsvComposantR"
         android:layout_width="match_parent"
         android:layout_height="500dp">
 

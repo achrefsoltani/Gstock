@@ -15,6 +15,7 @@ public class Familles extends AppCompatActivity {
 
     ListView _lsvFamilles;
     Button _btnFamille;
+    Button _btnDeconnexion,_btnRetour;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +23,8 @@ public class Familles extends AppCompatActivity {
         setContentView(R.layout.activity_familles);
 
         _lsvFamilles = (ListView) findViewById(R.id.lsvFamilles);
+        _btnDeconnexion = (Button) findViewById(R.id.btnDeco);
+        _btnRetour = (Button) findViewById(R.id.btnRetour);
 
         final ArrayList<famille> familles = new ArrayList<famille>();
         familles.add(new famille("Circuits",R.drawable.onef));
@@ -37,6 +40,22 @@ public class Familles extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapter, View view, int position, long arg) {
                 Intent appInfo = new Intent(getApplicationContext(), Composants.class);
                 startActivity(appInfo);
+            }
+        });
+
+        _btnRetour.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(),Home.class);
+                startActivity(i);
+            }
+        });
+
+        _btnDeconnexion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(),MainActivity.class);
+                startActivity(i);
             }
         });
     }
